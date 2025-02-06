@@ -1,0 +1,474 @@
+
+
+/* font */
+@font-face {
+    font-family: 'SF UI Display Ultralight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Ultralight'), url('./assets/fonts/sf-ui-display-cufonfonts-webfont/sf-ui-display-ultralight-58646b19bf205.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'SF UI Display Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Thin'), url('./assets/fonts/sf-ui-display-cufonfonts-webfont/sf-ui-display-thin-58646e9b26e8b.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'SF UI Display Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Light'), url('./assets/fonts/sf-ui-display-cufonfonts-webfont/sf-ui-display-light-58646b33e0551.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'SF UI Display Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Medium'), url('./assets/fonts/sf-ui-display-cufonfonts-webfont/sf-ui-display-medium-58646be638f96.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'SF UI Display Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Semibold'), url('./assets/fonts/sf-ui-display-cufonfonts-webfont/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'SF UI Display Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Bold'), url('./assets/fonts/sf-ui-display-cufonfonts-webfont/sf-ui-display-bold-58646a511e3d9.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'SF UI Display Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Heavy'), url('./assets/fonts/sf-ui-display-cufonfonts-webfont/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'SF UI Display Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Black'), url('./assets/fonts/sf-ui-display-cufonfonts-webfont/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
+    }
+ /* general style */
+:root {
+    --primary-color: rgb(0, 113, 227);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "SF UI Display Light";
+    font-weight: 400;
+}   
+.container{
+    max-width: 980px;
+    margin: 0 auto;
+    
+}
+
+.btn {
+    font-size: 17px;
+    line-height: 1;
+    font-weight: 400;
+    border: 1px solid var(--primary-color);
+    padding: 11px 21px;
+    color: white;
+    border-radius: 900px;
+    font-weight: 400px;
+    transition: all 0.5 ease-in-out;
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.btn-primary:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn-secondary{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+.btn-secondary:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+.btn-white {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+}
+.btn-white:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* style header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255,255,255, 0.8);
+}
+
+.navbar {
+    max-width: 785px;
+    margin: 0 auto;
+    padding: 0px 16px;
+    font-size: 12px;
+    line-height: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar a {
+    font-size:12px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.icon-apple{
+    width: 15px;
+    height: 44px;
+}
+
+.icon-search{
+    width: 15px;
+    height: 44px;
+}
+#iPhone-15-black {
+    background-image: url("./assets/images/hero_iphone.jpg");
+}
+
+#iPhone-15-white{
+    background-image: url("./assets/images/hero_iphone_white.jpg");
+    margin-top: 20px;
+}
+
+#iPhone-15-white p{
+    color: #000;
+}
+#iPhone-15-white h1{
+    color: #000;
+}
+
+#macbook-air{
+    background-image: url("./assets/images/macbook_air.jpg");
+    margin-top: 20px;
+}
+
+#macbook-air p {
+    color: #505050;
+    font-size: 16px;
+}
+#macbook-air h1{
+    color: #000;
+}
+#macbook-air h5{
+    color: #000;
+    font-size: 26px;
+    margin-bottom: 18px;
+
+}
+
+.product{
+    margin-top: 46px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 580px;
+}
+
+.product-content {
+    display:flex;
+    color: #fff;
+    flex-direction: column;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.product-content h1{
+    font-size: 56px;
+    line-height: 1;
+    font-weight: 600;
+    font-family: "SF UI Display Medium";
+    margin-bottom: 6px;   
+}
+
+.product-content p {
+    font-size: 18px;
+    line-height: 1;
+    font-family: "SF UI Display Medium";
+    font-weight: 400;
+    margin-bottom: 26px;
+}
+
+.cta-button{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/* section grid produk  */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.grid-items-product {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #000;
+}
+.grid-items-product img{
+    margin-top: 60px;
+}
+
+.grid-items-product h5 {
+    font-size: 21px;
+    font-family: "SF UI Display Light";
+    margin-bottom: 18px;
+}
+.logo-product{
+    margin-bottom: 10px;
+    height: 53px;
+    width: auto;
+}
+
+.watch-nine{
+    background-image: url(./assets/images/apple_watch.jpg);
+
+}
+.watch-nine h5{
+    color: #fff;
+}
+.watch-ultra{
+    background-image: url(./assets/images/apple_watch_white.jpg);
+}
+.ipad {
+    background-image: url(./assets/images/ipad.jpg);
+}
+.ipad-pro{
+    background-image: url(./assets/images/ipad_black.jpg);
+}
+.macbook {
+    background-image: url(./assets/images/macbook_air.jpg);
+}
+.airpods {
+    background-image: url(./assets/images/airpods.jpg);
+}
+
+.watch-ultra h5{
+    color: #000;
+}
+.watch-nine, .watch-ultra, .ipad, .ipad-pro, .airpods, .macbook{
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    width: 100%; 
+    min-height: 580px; 
+}
+
+.airpods h2 {
+    color: #fff;
+}
+.airpods p{
+    color: #fff;
+}
+
+
+
+.product-item h2{
+    margin-top: 53px;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.product-item p{
+    margin-bottom: 16px;
+    font-size: 21px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-family: "SF UI Display Light";
+}
+.ipad-pro h2 {
+    color: #fff;
+}
+.ipad-pro p{
+    color: #fff;
+}
+
+/* Caraousel */
+
+#apple-tv {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.carousel {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 668px;
+    margin-bottom: 12px;
+}
+.carousel-item {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out, visibility 0.5 ease-in-out;
+    /* visibility: hidden; */
+
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.carousel-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 55px;
+    padding-bottom: 50px;
+    gap: 12px;
+}
+.carousel-content p {
+    color: #fff;
+    font-family: "SF UI Display Light";
+    line-height: 1;
+    font-size: 22px;
+
+}
+
+.carousel-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.carousel-control span {
+    background-color: rgb(0, 0, 0, 0.4);
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.carousel-control .active {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.carousel-item.active {
+    visibility: visible;
+    z-index: 22;
+    position: relative;
+    transform: translateX(0%);
+}
+
+.carousel-item.previous {
+    visibility: visible;
+    z-index: 11;
+    cursor: pointer;
+    transform: translateX(-100%);
+}
+
+.carousel-item.next {
+    visibility: visible;
+    z-index: 10;
+    cursor: pointer;
+    transform: translateX(100%);
+}
+.carousel-item.move-left{
+    transform: translateX(-100%);
+    visibility: visible;
+}
+.carousel-item.move-right{
+    transform: translateX(100%);
+    visibility: visible;
+}
+.carousel-item.enter-left{
+    transform: translateX(0%);
+    visibility: visible;
+}
+.carousel-item.enter-right{
+    transform: translateX(0%);
+    visibility: visible;
+}
+
+
+/* footer */
+
+footer {
+    background-color: rgb(245, 245, 247);
+    font-size: 12px;
+    font-family: "SF UI Display Light";
+    padding-top: 12px;
+}
+.subscribe {
+    color: rgba(0, 0, 0, 0.56);
+}
+.line {
+    border-color: rgba(0, 0, 0, 0.16);
+    margin: 14px 0;
+}
+
+footer ul {
+    list-style: none;
+   
+}
+footer li {
+    font-family: "SF UI Display Light";
+}
+
+.list-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.list-footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+strong {
+    font-weight: bold;
+}
